@@ -80,7 +80,7 @@ POST /_open/suno/music/generate
 ```json
 {
   "expectAiModel": "ace",
-  "mvVersion": "acemusic-v1.1",
+  "mvVersion": "ace-step-1.5-xl",
   "inputType": "10",
   "makeInstrumental": false,
   "gptDescriptionPrompt": "疯狂星期四",
@@ -93,7 +93,7 @@ POST /_open/suno/music/generate
 | 参数 | 说明 |
 |---|---|
 | expectAiModel | 指定音乐模型，ace |
-| mvVersion | 模型版本，acemusic-v1.1 |
+| mvVersion | 模型版本，ace-step-1.5-xl |
 | inputType | 创作模式，10 为灵感模式 |
 | makeInstrumental | 是否生成纯音乐 |
 | gptDescriptionPrompt | 音乐创作描述 |
