@@ -1,4 +1,4 @@
-# ACE Music API 接入指南：灵感模式音乐创作（acemusic-v1.1）
+# ACE Music API 接入指南：灵感模式音乐创作
 
 ## 一、功能介绍
 
@@ -8,7 +8,7 @@ ACE Music API 支持通过灵感模式进行 AI 音乐创作。用户只需要�
 
 通过 ACE Music API，开发者可以将 AI 音乐创作能力集成到自己的网站、应用或小程序中，实现自动化音乐生成。
 
-本次接口示例使用的模型版本为 **acemusic-v1.1**。
+本次接口示例使用的模型版本为 **ace-step-1.5-xl**。
 
 ## 二、请求令牌申请
 
@@ -35,7 +35,7 @@ POST /_open/suno/music/generate
 ```json
 {
   "expectAiModel": "ace",
-  "mvVersion": "acemusic-v1.1",
+  "mvVersion": "ace-step-1.5-xl",
   "inputType": "10",
   "makeInstrumental": false,
   "gptDescriptionPrompt": "疯狂星期四",
@@ -48,7 +48,7 @@ POST /_open/suno/music/generate
 | 参数 | 示例值 | 说明 |
 |---|---|---|
 | expectAiModel | ace | 指定 ACE 音乐模型 |
-| mvVersion | acemusic-v1.1 | 指定 ACE 模型版本 |
+| mvVersion | ace-step-1.5-xl | 指定 ACE 模型版本 |
 | inputType | 10 | 灵感模式 |
 | makeInstrumental | false | 是否生成纯音乐，false 表示包含人声 |
 | gptDescriptionPrompt | 疯狂星期四 | 音乐创作灵感描述 |
@@ -148,7 +148,7 @@ POST /_open/suno/music/generate
 开发者可以按照以下步骤完成 ACE Music API 的接入：
 
 1. **申请 API Token：** 通过平台申请访问令牌，获取接口调用权限。
-2. **配置模型参数：** 指定 `expectAiModel: "ace"` 和 `mvVersion: "acemusic-v1.1"`。
+2. **配置模型参数：** 指定 `expectAiModel: "ace"` 和 `mvVersion: "ace-step-1.5-xl"`。
 3. **选择创作模式：** 设置 `inputType: "10"`，使用灵感模式。
 4. **提交创作内容：** 通过 `gptDescriptionPrompt` 传入歌曲主题或创作描述。
 5. **调用生成接口：** 请求音乐生成接口，提交创作任务。
